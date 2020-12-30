@@ -1,0 +1,16 @@
+# Editor
+.vscode
+
+# Byte-compiled
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+wheels/
+
+# Environment
+.env
+.venv
+env/
+venv/
