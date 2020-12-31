@@ -1,4 +1,4 @@
-# Fynk
+# Rynk
 
 Financial data API.
 

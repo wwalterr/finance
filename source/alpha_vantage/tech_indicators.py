@@ -21,7 +21,7 @@ tech_indicators = TechIndicators(
 
 def alpha_vantage_tech_indicators(
     symbol,
-    time_period=SETTINGS_ALPHA_VANTAGE.get('time_period'),
+    time_period=SETTINGS_ALPHA_VANTAGE.get('tech_indicators_time_period'),
 ):
     data, meta_data = tech_indicators.get_bbands(
         symbol=symbol,
