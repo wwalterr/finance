@@ -6,10 +6,13 @@ from .tech_indicators import alpha_vantage_tech_indicators
 
 from .cryptocurrencies import alpha_vantage_cryptocurrencies
 
+from .cryptocurrency_rating import alpha_vantage_cryptocurrency_rating
+
 
 __all__ = [
     'alpha_vantage_time_series',
     'alpha_vantage_symbol_search',
-    'alpha_vantage_tech_indicators'
-    'alpha_vantage_cryptocurrencies'
+    'alpha_vantage_tech_indicators',
+    'alpha_vantage_cryptocurrencies',
+    'alpha_vantage_cryptocurrency_rating'
 ]
