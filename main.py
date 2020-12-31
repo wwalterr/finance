@@ -3,7 +3,8 @@ from source.alpha_vantage import (
     alpha_vantage_symbol_search,
     alpha_vantage_tech_indicators,
     alpha_vantage_cryptocurrencies,
-    alpha_vantage_cryptocurrency_rating
+    alpha_vantage_cryptocurrency_rating,
+    alpha_vantage_cryptocurrency_exchange_rate
 )
 
 from source.yahoo import yahoo_stock
@@ -22,6 +23,8 @@ CRYPTOCURRENCY = {
     'name': 'Bitcoin',
     'code': 'BTC',
     'market': 'CNY',
+    'from_currency': 'BTC',
+    'to_currency': 'USD'
 }
 
 
@@ -41,7 +44,7 @@ print_formated(
 )
 
 print_formated(
-    text=f'Alpha Vantage cryptocurrency, {CRYPTOCURRENCY.get("name")} stock',
+    text=f'Alpha Vantage cryptocurrency, {CRYPTOCURRENCY.get("name")}',
     data=alpha_vantage_cryptocurrencies(
         CRYPTOCURRENCY.get('code'),
         CRYPTOCURRENCY.get('market')
@@ -49,8 +52,16 @@ print_formated(
 )
 
 print_formated(
-    text=f'Alpha Vantage cryptocurrency rating, {CRYPTOCURRENCY.get("name")} stock',
+    text=f'Alpha Vantage cryptocurrency rating, {CRYPTOCURRENCY.get("name")}',
     data=alpha_vantage_cryptocurrency_rating(CRYPTOCURRENCY.get('code'))
+)
+
+print_formated(
+    text=f'Alpha Vantage cryptocurrency exchange rate, from {CRYPTOCURRENCY.get("from_currency")} to {CRYPTOCURRENCY.get("to_currency")}',
+    data=alpha_vantage_cryptocurrency_exchange_rate(
+        CRYPTOCURRENCY.get("from_currency"),
+        CRYPTOCURRENCY.get("to_currency")
+    )
 )
 
 

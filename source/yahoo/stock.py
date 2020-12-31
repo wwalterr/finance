@@ -5,4 +5,4 @@ __all__ = ['yahoo_stock']
 
 
 def yahoo_stock(symbol):
-    return Ticker(symbol)
+    return Ticker(ticker=symbol)
