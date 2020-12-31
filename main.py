@@ -1,7 +1,8 @@
 from source.alpha_vantage import (
     alpha_vantage_time_series,
     alpha_vantage_symbol_search,
-    alpha_vantage_tech_indicators
+    alpha_vantage_tech_indicators,
+    alpha_vantage_cryptocurrencies
 )
 
 from source.yahoo import yahoo_stock
@@ -14,6 +15,12 @@ from source.spacy_ner import spacy_ner
 STOCK = {
     'name': 'Nvidia',
     'code': 'NVDA'
+}
+
+CRYPTOCURRENCY = {
+    'name': 'Bitcoin',
+    'code': 'BTC',
+    'market': 'CNY',
 }
 
 
@@ -30,6 +37,14 @@ STOCK = {
 # print_formated(
 #     text=f'Alpha Vantage tech indicators, {STOCK.get("name")} stock',
 #     data=alpha_vantage_tech_indicators(STOCK.get('code'))
+# )
+
+# print_formated(
+#     text=f'Alpha Vantage cryptocurrency, {CRYPTOCURRENCY.get("name")} stock',
+#     data=alpha_vantage_cryptocurrencies(
+#         CRYPTOCURRENCY.get('code'),
+#         CRYPTOCURRENCY.get('market')
+#     )
 # )
 
 

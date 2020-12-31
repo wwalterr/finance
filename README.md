@@ -40,6 +40,8 @@ python main.py
 
 ## To do
 
+- Convert any coin function
+
 - Real time stock data (explore both APIs in use)
 
 - Parse and filter NER

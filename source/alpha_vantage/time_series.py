@@ -27,7 +27,7 @@ PERIODS = {
 
 def alpha_vantage_time_series(
     symbol,
-    period='intraday',
+    period=SETTINGS_ALPHA_VANTAGE.get('time_series_period'),
 ):
     data, meta_data = PERIODS.get(period)(
         symbol=symbol,
