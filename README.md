@@ -19,6 +19,10 @@ source venv/bin/activate
 3. Install dependencies
 
 ```sh
+sudo apt install libncurses5 && pip install spacy-transformers --pre -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+```sh
 pip install -r requirements.txt
 ```
 
