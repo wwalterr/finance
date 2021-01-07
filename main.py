@@ -1,17 +1,31 @@
-from source.alpha_vantage import (
-    alpha_vantage_time_series,
-    alpha_vantage_symbol_search,
-    alpha_vantage_tech_indicators,
-    alpha_vantage_cryptocurrencies,
-    alpha_vantage_cryptocurrency_rating,
-    alpha_vantage_cryptocurrency_exchange_rate
-)
+# from source.utils import print_formated
 
-from source.yahoo import yahoo_stock
+# from source.speech import convert_audio, speech_to_text
 
-from source.utils import print_formated
+# from source.spacy_ner import spacy_ner
 
-from source.spacy_ner import spacy_ner
+# from source.alpha_vantage import (
+#     alpha_vantage_time_series,
+#     alpha_vantage_symbol_search,
+#     alpha_vantage_tech_indicators,
+#     alpha_vantage_cryptocurrencies,
+#     alpha_vantage_cryptocurrency_rating,
+#     alpha_vantage_cryptocurrency_exchange_rate
+# )
+
+# from source.yahoo import yahoo_stock
+
+
+# audio_converted = convert_audio(
+#     open('./source/speech/samples/sample_1.wav', 'rb')
+# )
+
+# speech_text = speech_to_text(audio_converted)
+
+# print('Speech to text:', speech_text)
+
+
+# print(spacy_ner(speech_text))
 
 
 # STOCK = {
@@ -65,28 +79,29 @@ from source.spacy_ner import spacy_ner
 # )
 
 
-# data = yahoo_stock(STOCK.get('code'))
+# yahoo_data = yahoo_stock(STOCK.get('code'))
 
 # print_formated(
 #     text=f'Yahoo, {STOCK.get("name")} stock',
 #     data={
-#         'info': data.info,  # Dict
-#         'history': data.history('1d').reset_index(drop=True).to_dict(),  # Data Frame
-#         'dividends': data.dividends.reset_index(drop=True).to_dict(),  # Series
-#         'splits': data.splits.reset_index(drop=True).to_dict(),  # Series
-#         'financials': data.financials.reset_index(drop=True).to_dict(),  # Data Frame
-#         'major_holders': data.major_holders.reset_index(drop=True).to_dict(),  # Data Frame
-#         'institutional_holders': data.institutional_holders.reset_index(drop=True).to_dict(),  # Data Frame
-#         # 'balance_sheet': data.balance_sheet.reset_index(drop=True).to_dict(),  # Data Frame
-#         # 'cashflow': data.cashflow.reset_index(drop=True).to_dict(),  # Data Frame
-#         # 'earnings': data.earnings.reset_index(drop=True).to_dict(),  # Data Frame
-#         # 'ysustainability': data.sustainability.reset_index(drop=True).to_dict(),  # Data Frame
-#         # 'recommendations': data.recommendations.reset_index(drop=True).to_dict(),  # Data Frame
-#         'calendar': data.calendar.reset_index(drop=True).to_dict(),  # Data Frame
+#         'info': yahoo_data.info,  # Dict
+#         # Data Frame
+#         'history': yahoo_data.history('1d').reset_index(drop=True).to_dict(),
+#         # Series
+#         'dividends': yahoo_data.dividends.reset_index(drop=True).to_dict(),
+#         'splits': yahoo_data.splits.reset_index(drop=True).to_dict(),  # Series
+#         # Data Frame
+#         'financials': yahoo_data.financials.reset_index(drop=True).to_dict(),
+#         # Data Frame
+#         'major_holders': yahoo_data.major_holders.reset_index(drop=True).to_dict(),
+#         # Data Frame
+#         'institutional_holders': yahoo_data.institutional_holders.reset_index(drop=True).to_dict(),
+#         # 'balance_sheet': yahoo_data.balance_sheet.reset_index(drop=True).to_dict(),  # Data Frame
+#         # 'cashflow': yahoo_data.cashflow.reset_index(drop=True).to_dict(),  # Data Frame
+#         # 'earnings': yahoo_data.earnings.reset_index(drop=True).to_dict(),  # Data Frame
+#         # 'ysustainability': yahoo_data.sustainability.reset_index(drop=True).to_dict(),  # Data Frame
+#         # 'recommendations': yahoo_data.recommendations.reset_index(drop=True).to_dict(),  # Data Frame
+#         # Data Frame
+#         'calendar': data.calendar.reset_index(drop=True).to_dict(),
 #     }
 # )
-
-
-print(spacy_ner(
-    '20 Stocks from NVIDIA at the price of 58.23 dolars, purchased at 01/01/2020'
-))

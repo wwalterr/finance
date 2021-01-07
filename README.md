@@ -16,23 +16,33 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+> All the steps below can be done by running the installation script `./install.sh`
+
 3. Install dependencies
 
 ```sh
-sudo apt install libncurses5 && pip install spacy-transformers --pre -f https://download.pytorch.org/whl/torch_stable.html
+sudo apt install libncurses5 # Spacy
+```
+
+```sh
+apt install portaudio19-dev python-all-dev python3-all-dev # Speech recognition
 ```
 
 ```sh
 pip install -r requirements.txt
 ```
 
-4. Install language model dependencies
-
 ```sh
-python -m spacy download en_core_web_trf # English Transformer pipeline, Roberta base
+pip install spacy-transformers --pre -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-Check language model [releases](https://github.com/explosion/spacy-models/releases).
+1. Download a language model
+
+```sh
+python -m spacy download en_core_web_trf
+```
+
+Check available language model [releases](https://github.com/explosion/spacy-models/releases).
 
 ## Execute
 
@@ -42,26 +52,6 @@ Check language model [releases](https://github.com/explosion/spacy-models/releas
 python main.py
 ```
 
-## To do
+## Author
 
-- Convert any coin function
-
-- Real time stock data (explore both APIs in use)
-
-- Parse and filter NER
-
-- Get stock data using the company name
-
-- Stock dividends calendar (https://financialmodelingprep.com/developer/docs#Dividend-Calendar | https://iexcloud.io/docs/api/#upcoming-events)
-
-- Crypto (https://www.alphavantage.co/documentation/)
-
-- Speech to text (https://realpython.com/python-speech-recognition/)
-
-- Fast API + security / access (https://fastapi.tiangolo.com/tutorial/first-steps/)
-
-- Deploy (https://www.serverless.com/)
-
-- Cat Boost (yfinance.download('SPY AAPL', start='2017-01-01', end='2017-04-30', group_by='ticker'))
-
-- Update documentation
+- [Walter](https://github.com/Sphinxs)
