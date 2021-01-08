@@ -113,6 +113,6 @@
 #         # 'ysustainability': yahoo_data.sustainability.reset_index(drop=True).to_dict(),  # Data Frame
 #         # 'recommendations': yahoo_data.recommendations.reset_index(drop=True).to_dict(),  # Data Frame
 #         # Data Frame
-#         'calendar': data.calendar.reset_index(drop=True).to_dict(),
+#         'calendar': yahoo_data.calendar.reset_index(drop=True).to_dict(),
 #     }
 # )
