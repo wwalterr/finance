@@ -14,4 +14,4 @@ def spacy_ner(text, language=''):
 
     document = nlp(text)
 
-    return [{'label': entity.label_, 'text': entity.text} for entity in document.ents]
+    return [{'label': entity.label_, 'content': entity.text} for entity in document.ents]

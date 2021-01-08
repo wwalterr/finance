@@ -2,7 +2,7 @@
 
 # from source.speech import convert_audio, speech_to_text
 
-# from source.spacy_ner import spacy_ner
+# from source.spacy_ner import spacy_ner, ner_validation
 
 # from source.alpha_vantage import (
 #     alpha_vantage_time_series,
@@ -25,7 +25,18 @@
 # print('Speech to text:', speech_text)
 
 
-# print(spacy_ner(speech_text))
+# speech_entities = spacy_ner(speech_text)
+
+# print('Speech entities: ', speech_entities)
+
+
+# (
+#     speech_entities_error,
+#     speech_entities_message,
+#     speech_entities_validated
+# ) = ner_validation(speech_entities)
+
+# print('Speech entities validated:', speech_entities_validated)
 
 
 # STOCK = {
