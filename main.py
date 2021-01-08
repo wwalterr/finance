@@ -15,6 +15,8 @@
 
 # from source.yahoo import yahoo_stock
 
+# from source.cryptocompare import cryptocompare_price, cryptocompare_cryptos
+
 
 # audio_converted = convert_audio(
 #     open('./source/speech/samples/sample_1.wav', 'rb')
@@ -116,3 +118,8 @@
 #         'calendar': yahoo_data.calendar.reset_index(drop=True).to_dict(),
 #     }
 # )
+
+
+# print('Crypto compare list', cryptocompare_cryptos(CRYPTOCURRENCY.get('code')))
+
+# print('Crypto compare price', cryptocompare_price(CRYPTOCURRENCY.get('from_currency'), CRYPTOCURRENCY.get('to_currency')))
