@@ -6,6 +6,6 @@ __all__ = ['cryptocompare_price']
 
 def cryptocompare_price(symbol_from, symbool_to=None):
     if not symbool_to:
-        get_price(symbol_from)
+        return get_price(symbol_from)
     else:
         return get_price(symbol_from, curr=symbool_to)
