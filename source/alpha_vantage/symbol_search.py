@@ -24,4 +24,4 @@ def alpha_vantage_symbol_search(keywords):
         keywords=keywords,
     )
 
-    return {'data': data, 'meta_data': meta_data}
+    return {'data': dict(zip(data.columns, next(iter(data.values.tolist())))), 'meta_data': meta_data}

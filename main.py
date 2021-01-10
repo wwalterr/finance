@@ -43,12 +43,12 @@
 
 # STOCK = {
 #     'name': 'Nvidia',
-#     'code': 'NVDA'
+#     'symbol': 'NVDA'
 # }
 
 # CRYPTOCURRENCY = {
 #     'name': 'Bitcoin',
-#     'code': 'BTC',
+#     'symbol': 'BTC',
 #     'market': 'CNY',
 #     'from_currency': 'BTC',
 #     'to_currency': 'USD'
@@ -62,25 +62,25 @@
 
 # print_formated(
 #     text=f'Alpha Vantage time series, {STOCK.get("name")} stock',
-#     data=alpha_vantage_time_series(STOCK.get('code'), period='daily')
+#     data=alpha_vantage_time_series(STOCK.get('symbol'), period='daily')
 # )
 
 # print_formated(
 #     text=f'Alpha Vantage tech indicators, {STOCK.get("name")} stock',
-#     data=alpha_vantage_tech_indicators(STOCK.get('code'))
+#     data=alpha_vantage_tech_indicators(STOCK.get('symbol'))
 # )
 
 # print_formated(
 #     text=f'Alpha Vantage cryptocurrency, {CRYPTOCURRENCY.get("name")}',
 #     data=alpha_vantage_cryptocurrencies(
-#         CRYPTOCURRENCY.get('code'),
+#         CRYPTOCURRENCY.get('symbol'),
 #         CRYPTOCURRENCY.get('market')
 #     )
 # )
 
 # print_formated(
 #     text=f'Alpha Vantage cryptocurrency rating, {CRYPTOCURRENCY.get("name")}',
-#     data=alpha_vantage_cryptocurrency_rating(CRYPTOCURRENCY.get('code'))
+#     data=alpha_vantage_cryptocurrency_rating(CRYPTOCURRENCY.get('symbol'))
 # )
 
 # print_formated(
@@ -92,7 +92,7 @@
 # )
 
 
-# yahoo_data = yahoo_stock(STOCK.get('code'))
+# yahoo_data = yahoo_stock(STOCK.get('symbol'))
 
 # print_formated(
 #     text=f'Yahoo, {STOCK.get("name")} stock',
@@ -120,6 +120,6 @@
 # )
 
 
-# print('Crypto compare list', cryptocompare_cryptos(CRYPTOCURRENCY.get('code')))
+# print('Crypto compare list', cryptocompare_cryptos(CRYPTOCURRENCY.get('symbol')))
 
 # print('Crypto compare price', cryptocompare_price(CRYPTOCURRENCY.get('from_currency'), CRYPTOCURRENCY.get('to_currency')))
