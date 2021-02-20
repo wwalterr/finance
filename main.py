@@ -19,7 +19,7 @@
 
 
 # audio_converted = convert_audio(
-#     open('./source/speech/samples/sample_1.wav', 'rb')
+#     open('./source/speech/samples/sample_1_stock.wav', 'rb')
 # )
 
 # speech_text = speech_to_text(audio_converted)
