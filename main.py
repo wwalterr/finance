@@ -123,4 +123,5 @@ print_formated(
 print('Crypto compare list', cryptocompare_cryptos(CRYPTOCURRENCY.get('symbol')))
 
 print('Crypto compare price', cryptocompare_price(
-    CRYPTOCURRENCY.get('from_currency'), CRYPTOCURRENCY.get('to_currency')))
+    CRYPTOCURRENCY.get('from_currency'), CRYPTOCURRENCY.get('to_currency'))
+)
