@@ -1,6 +1,6 @@
-# Rynk
+# Finance
 
-Financial data API.
+Stock data from Speech Synthesis and Named-entity Recognition
 
 ## Setup
 
@@ -51,7 +51,3 @@ Check available language model [releases](https://github.com/explosion/spacy-mod
 ```sh
 python main.py
 ```
-
-## Author
-
-- [Walter](https://github.com/Sphinxs)
