@@ -1,19 +1,15 @@
 # Editor
 .vscode
 
-# Byte-compiled
-__pycache__/
+# Environment
+venv
 
-# Distribution / packaging
-build/
-dist/
-wheels/
+# Build
+build
+dist
+main.spec
 
 # Cache
+__pycache__
+cache_dir
 .json
-
-# Environment
-.env
-.venv
-env/
-venv/

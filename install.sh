@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-sudo apt install libncurses5 # Spacy
+# Spacy
+sudo apt install libncurses5
 
-apt install portaudio19-dev python-all-dev python3-all-dev # Speech recognition
+# Speech recognition
+apt install portaudio19-dev python-all-dev python3-all-dev
 
+# Python modules
 pip install -r requirements.txt
 
 pip install spacy-transformers --pre -f https://download.pytorch.org/whl/torch_stable.html
