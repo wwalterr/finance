@@ -1,6 +1,6 @@
 # Finance
 
-Stock data from Speech Synthesis and Named-entity Recognition
+Stock data from speech recognition and named-entity recognition
 
 ## Setup
 
